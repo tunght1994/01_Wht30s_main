@@ -1,0 +1,114 @@
+@use "./../../scss/" as *;
+
+.brand {
+  background-color: $cerulean;
+  padding: 150px 0;
+  position: relative;
+  z-index: -1;
+
+  &-header {
+    width: 682px;
+    text-align: center;
+    margin: auto;
+    h1 {
+      font-size: 45px;
+      font-weight: bold;
+      color: $sun-yellow;
+      margin-bottom: 40px;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+    }
+    p {
+      font-size: 16px;
+      font-weight: 300;
+      color: $sun-yellow;
+      margin-bottom: 77px;
+    }
+  }
+  &-story {
+    width: 1254px;
+    margin: 77px auto 0;
+    z-index: 1;
+    img{
+      margin: auto;
+    }
+    &-text{
+      max-width: 100%;
+      width: 30%;
+      position: absolute;
+      top: 63%;
+      left: 66%;
+      transform: translate(-50%, -50%);
+      
+      &-content{
+        h2{
+          font-size: 25px;
+          font-weight: 800;
+          text-transform: uppercase;
+          color: $black-three;
+          margin-bottom: 39px;
+        }
+        &-desc{
+          font-size: 16px;
+          font-weight: 300;
+          color: $black-three;
+          margin-bottom: 47px;
+        }
+
+      }
+    }
+    
+  }
+  .object1{
+    position: absolute;
+    z-index: -1;
+    top: 23%;
+    left: 8%;
+  }
+  .object2{
+    position: absolute;
+    z-index: -1;
+    top: 7%;
+    right: 13.5%;
+  }
+  .object3{
+    position: absolute;
+    z-index: -1;
+    top: 10%;
+    right: 9%;
+  }
+  .object4{
+    position: absolute;
+    z-index: -1;
+    right: -4.5%;
+    top: 24%;
+  }
+  .object5{
+    position: absolute;
+    z-index: -1;
+    right: -1.4%;
+    top: 60%;
+  }
+  .object6{
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    top: 48%;
+  }
+  .object7{
+    position: absolute;
+    z-index: -1;
+    top: 56.5%;
+    left: 10%;
+  }
+
+  .line{
+    width: 100%;
+    height: 4px;
+    background-color: black;
+    position: absolute;
+    left: 10%;
+    bottom: 19%;
+    z-index: -2;
+  }
+}

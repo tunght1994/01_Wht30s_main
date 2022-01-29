@@ -1,0 +1,9 @@
+@use './../../scss/' as *;
+
+.list-product{
+    padding: 142px 0;
+    
+    &-button{
+        text-align: center;
+    }
+}

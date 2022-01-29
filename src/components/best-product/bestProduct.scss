@@ -1,0 +1,73 @@
+@use './../../scss/' as *;
+
+.best-product{
+    padding-top: 100px;
+    padding-bottom: 200px;
+    &_content{
+        position: relative;
+
+
+        &-header{
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            h1{
+                text-transform: uppercase;
+                font-size: 50px;
+                line-height: 1.2;
+                letter-spacing: 5px;
+                margin: 0 29px 49px;
+                color: $bright-orange;
+            }
+            p{
+                width: 665px;
+                font-size: 20px;
+                line-height: 1.6;
+                color: $bright-orange;
+            }
+        }
+
+        &-box{
+            @include flex(center, space-between);
+            margin-top: 42px;
+            .box-item{
+                position: relative;
+
+                &-icon{
+                    position: absolute;
+                    top: -7%;
+                    left: 0;
+                   &-img{
+                        object-fit: contain;
+                    }
+                }
+
+                &-content{
+                    @include flex(center, space-between);
+                    width: 369px;
+                    height: 79px;
+                    padding: 7px 8px 6px 27px;
+                    border: solid 3px $dark-maroon;
+                    background-color: $white;
+
+                    position: absolute;
+                    bottom: -7%;
+                    left: 50%;
+                    transform: translateX(-50%);
+
+
+
+                    &-text{
+                        width: 200px;
+                        height: 44px;
+                        font-size: 20px;
+                        font-weight: 800;
+                        color: $black-three;
+                    }
+                }
+            }
+        }
+    }
+
+}

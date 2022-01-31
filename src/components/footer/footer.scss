@@ -2,12 +2,14 @@
 
 
 .footer{
-
+    
     &-top{
         @include flex(none, space-between);
         margin-top: 50px;
         padding-bottom: 40px;
+        padding-top: 51px;
         border-bottom: solid 1px $white-three;
+        border-top: solid 1px $white-three;
         .footer-header{
             margin-bottom: 31px;
             font-size: 14px;
@@ -18,13 +20,18 @@
             font-size: 14px;
             font-weight: 300;
             color: $black-two;
+            &-item{
+                a{
+                    font-family: $font-kr;
+                }
+            }
         }
         &-left{
-            width: 50%;
+            width: 40%;
         }
         &-right{
             @include flex(none, space-between);
-            width: 50%;
+            width: 60%;
 
         }
     }
@@ -49,7 +56,7 @@
 }
 
 
-@media (max-width: 736px) {
+@media (max-width: 1023px) {
     .footer{
         &-top{
             flex-direction: column;

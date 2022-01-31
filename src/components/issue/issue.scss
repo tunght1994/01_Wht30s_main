@@ -22,6 +22,11 @@
       font-weight: 300;
       color: $dark-brown;
       margin-bottom: 55px;
+      font-family: $font-kr;
+
+    }
+    .button{
+      background-color: $sun-yellow;
     }
   }
   &-brand {
@@ -136,6 +141,31 @@
         }
       }
     }
+  }
+}
+
+@media (max-width: 1023px) {
+
+  .issue{
+    padding-top: 50px;
+    &-header{
+
+      &-desc{
+        margin-bottom: 35px;
+      }
+    }
+    &-brand{
+      margin-top: 60px;
+    }
+    .newObject2{
+      top: 10%;
+    }
+    .newObject3{
+      top: 0%;
+    }
+  }
+  .issue-brand-a{
+    padding: 20px 0;
   }
 }
 

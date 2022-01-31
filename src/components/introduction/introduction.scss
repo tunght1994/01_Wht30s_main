@@ -13,6 +13,7 @@
             text-transform: uppercase;
             font-size: 50px;
             color: $white;
+            font-weight: 800;
             letter-spacing: 5px;
             margin-bottom: 59px;
         }
@@ -24,11 +25,17 @@
     }
 }
 
-@media (max-width: 736px) {
+@media (max-width: 1023px) {
     .introduction{
         background-image: url('./../../assets/img/introduction-bg@2x.png');
         background-size: cover;
-        min-height: 320px;
+        min-height: 300px;
+
+    }
+}
+
+@media (max-width: 736px) {
+    .introduction{
 
         &-text{
             h1{
@@ -37,6 +44,25 @@
             }
             p{
                 font-size: 14px;
+            }
+        }
+    }
+}
+
+@media (max-width: 667px) {
+    .introduction{
+        background-image: url('./../../assets/img/introduction-bg@2x.png');
+        background-size: cover;
+        min-height: 200px;
+        &-text{
+            width: 80%;
+            left: 6%;
+            h1{
+                font-size: 20px;
+                margin-bottom: 21px;
+            }
+            p{
+                font-size: 12px;
             }
         }
     }

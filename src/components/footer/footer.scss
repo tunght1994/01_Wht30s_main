@@ -2,7 +2,7 @@
 
 
 .footer{
-    
+    padding-bottom: 113px;
     &-top{
         @include flex(none, space-between);
         margin-top: 50px;

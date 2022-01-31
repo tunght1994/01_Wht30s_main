@@ -1,16 +1,15 @@
-@use './../../scss/' as *;
+@use "./../../scss/" as *;
 
+.button {
+  width: 199px;
+  height: 60px;
+  border: solid 3px $dark-maroon;
+  background-color: $white;
 
-.button{
-    width: 199px;
-    height: 60px;
-    border: solid 3px $dark-maroon;
-    background-color: $white;
-    
-    p{
-        font-size: 23px;
-        font-weight: 800;
-        color: $black-three;
-        text-transform: uppercase;
-    }
+  &-text {
+    font-size: 23px;
+    font-weight: 800;
+    color: $black-three;
+    text-transform: uppercase;
+  }
 }

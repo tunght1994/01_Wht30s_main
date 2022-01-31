@@ -6,6 +6,7 @@
         max-width: 667px;
         position: absolute;
         top: 50%;
+        left: 8%;
         transform: translateY(-50%);
         
         h1{
@@ -19,6 +20,24 @@
             font-size: 20px;
             line-height: 1.75;
             color: $white;
+        }
+    }
+}
+
+@media (max-width: 736px) {
+    .introduction{
+        background-image: url('./../../assets/img/introduction-bg@2x.png');
+        background-size: cover;
+        min-height: 320px;
+
+        &-text{
+            h1{
+                font-size: 30px;
+                margin-bottom: 29px;
+            }
+            p{
+                font-size: 14px;
+            }
         }
     }
 }

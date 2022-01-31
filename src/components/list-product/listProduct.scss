@@ -7,3 +7,18 @@
         text-align: center;
     }
 }
+
+@media (max-width: 736px) {
+    .list-product{
+        padding: 70px 0; 
+        &-button{
+            .button{
+                width: 120px;
+                height: 39px;
+            }
+            p{
+                font-size: 14px;
+            }
+        }
+    }
+}

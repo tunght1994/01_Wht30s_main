@@ -1,1 +1,185 @@
-@use './../../scss/' as *;
+@use "./../../scss/" as *;
+
+.issue {
+  padding-top: 158px;
+  padding-bottom: 143px;
+  background-color: $goldenrod;
+  position: relative;
+  &-header {
+    width: 682px;
+    text-align: center;
+    margin: auto;
+    h1 {
+      font-size: 45px;
+      font-weight: bold;
+      color: $dark-brown;
+      margin-bottom: 40px;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+    }
+    &-desc {
+      font-size: 16px;
+      font-weight: 300;
+      color: $dark-brown;
+      margin-bottom: 55px;
+    }
+  }
+  &-brand {
+    margin-top: 128px;
+    &-a {
+      background-color: $bright-orange-two;
+      padding: 66px 101px 70px 97px;
+
+      position: relative;
+      .brand-whpn {
+        margin: 0 0 16px;
+        h2 {
+          text-transform: uppercase;
+          font-size: 55px;
+          font-weight: 800;
+          color: $dark-brown;
+        }
+      }
+      img {
+        margin: auto;
+      }
+
+      .newObject6 {
+        position: absolute;
+        right: -5%;
+        z-index: 1;
+      }
+    }
+    &-b {
+      position: relative;
+      .newObject4 {
+        position: absolute;
+        top: -12%;
+        left: 0%;
+      }
+    }
+    &-d {
+      position: relative;
+      .newObject5 {
+        position: absolute;
+        right: -9%;
+        bottom: -13%;
+      }
+    }
+    &-title {
+      margin-bottom: 0;
+      background-color: $black-two;
+      padding: 10px 0;
+      text-align: center;
+      font-weight: 800;
+      border: solid 3px $black-two;
+      color: $white;
+      text-transform: uppercase;
+      &-orange {
+        margin-bottom: 0;
+        padding: 10px 0;
+        text-align: center;
+        font-weight: 800;
+        border: solid 3px $black-two;
+        color: $white;
+        text-transform: uppercase;
+        background-color: $bright-orange-two;
+      }
+    }
+  }
+  .newObject2 {
+    position: absolute;
+    top: 15%;
+    right: 7%;
+  }
+  .newObject3 {
+    position: absolute;
+    top: 4%;
+    right: 7%;
+  }
+}
+
+@media (max-width: 1199px) {
+  .issue {
+    padding-top: 86px;
+    .newObject2,
+    .newObject3 {
+      width: 8%;
+    }
+    &-brand {
+      &-b, &-c, &-d, &-e{
+        margin-bottom: 5px;
+      }
+      &-a {
+        padding: 33px 0;
+
+        .brand-whpn {
+          h2 {
+            font-size: 34px;
+            text-align: center;
+          }
+        }
+        img {
+          width: 54%;
+        }
+      }
+      &-b {
+        .newObject4 {
+          width: 54%;
+          top: -14%;
+        }
+      }
+
+      &-d {
+        .newObject5 {
+          width: 54%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 736px) {
+  .issue {
+    padding-top: 50px;
+    padding-bottom: 130px;
+
+    &-header {
+      width: 88%;
+      h1 {
+        font-size: 18px;
+        margin-bottom: 20px;
+      }
+      &-desc {
+        margin-bottom: 20px;
+      }
+      .button {
+        width: 120px;
+        height: 39px;
+      }
+      p {
+        font-size: 14px;
+      }
+    }
+
+    &-brand{
+      margin-top: 60px;
+      &-a{
+        padding: 80px 0;
+        .whpn-img{
+          width: 35%;
+        }
+      }
+    }
+    img{
+      width: 100%;
+    }
+    .newObject2, .newObject3, .newObject6, .newObject5{
+      display: none;
+    }
+    .newObject4{
+      width: 27%;
+      top: -6%;
+    }
+  }
+}

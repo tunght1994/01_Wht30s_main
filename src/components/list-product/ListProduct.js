@@ -22,7 +22,7 @@ const ListProduct = () => {
             <div className="row">
                 {
                     arrayItem(itemImg).map((item , index) => (
-                        <div key={index} className="col-5">
+                        <div key={index} className="col-5 col-xl-25 col-sm-1">
                             <Card img={productImg} />
                         </div>
                     ))

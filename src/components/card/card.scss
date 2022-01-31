@@ -32,3 +32,12 @@
     }
   }
 }
+
+@media (max-width: 736px) {
+  .card{
+    margin-bottom: 25px;
+    p{
+      margin: 12px 0;
+    }
+  }
+}

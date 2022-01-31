@@ -1,45 +1,108 @@
-@use './../../scss/' as *;
+@use "./../../scss/" as *;
 
-.header{
-    height: 80px;
-    padding: 27px 97px;
-    background: $black-two;
+.header {
+  max-height: 80px;
+  padding: 27px;
+  background: $black-two;
 
-    &-content{
+  &-content {
+    @include flex(center, space-between);
+    &-logo {
+      img {
+        width: 226px;
+        height: 26px;
+      }
+    }
+    &-menu {
+      @include flex(center, space-between);
+      .header-menu {
         @include flex(center, space-between);
-
-        &-logo{
-            img{
-                width: 226px;
-                height: 26px;
+        gap: 72px;
+        &-item {
+          a {
+            color: $white;
+            text-transform: uppercase;
+            font-size: 14px;
+            transition: all 0.2s ease;
+            &:hover {
+              color: $bright-orange;
             }
+          }
         }
+      }
+    }
+  }
+  &-line {
+    width: 1px;
+    height: 23px;
+    margin: 0 44px 6px 57px;
+    background-color: $pinkish-grey-two;
+  }
+  &-menu{
+    &-icon{
+      display: none;
+    }
+  }
+}
 
-        &-menu{
-            @include flex(center, space-between);
-            .header-menu{
-                @include flex(center, space-between);
-                gap: 72px;
-                &-item{
-                    a{
-                        color: $white;
-                        text-transform: uppercase;
-                        font-size: 14px;
-                        transition: all 0.2s ease;
-                        &:hover{
-                            color: $bright-orange;
-                        }
-                    }
-                }
-            }
+@media (max-width: 1199.98px) {
+    .header-content-menu{
+        .header-menu{
+          gap: 0 40px;
         }
-        
-        
     }
-    &-line{
-        width: 1px;
-        height: 23px;
-        margin: 0 44px 6px 57px;
-        background-color: $pinkish-grey-two;
+}
+
+@media (max-width: 736px) {
+  .header{
+    padding: 12px;
+  }
+  .header-content{
+    &-logo{
+      img{
+        width: 176px;
+        height: 24px;
+      }
     }
+    &-menu{
+        display: none;
+        .header-menu{
+          align-items: flex-start;
+          gap: 0 40px;
+        }
+    }
+  }
+  .header-menu{
+    &-icon{
+      display: block;
+      width: 11%;
+      z-index: 1;
+    }
+    &-toggle{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      width: 100%;
+      background-color: $black-two;
+      padding-left: 27px;
+      position: absolute;
+      top: 7%;
+      left: 0;
+      z-index: 1;
+      display: block;
+      &-item{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        
+        &-link{
+          margin-bottom: 5px;
+        }
+      }
+    }
+
+  }
+  .header-line{
+    display: none;
+  }
 }
